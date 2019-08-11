@@ -1,0 +1,11 @@
+{
+  "name": "lol_api",
+  "version": "1.0.0",
+  "description": "A wrapper for the league of legends api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ryan Smith",
+  "license": "MIT"
+}
