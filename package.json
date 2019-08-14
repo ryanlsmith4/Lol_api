@@ -2,10 +2,13 @@
   "name": "lol_api",
   "version": "1.0.0",
   "description": "A wrapper for the league of legends api ",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest"
   },
   "author": "Ryan Smith",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
