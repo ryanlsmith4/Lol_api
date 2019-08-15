@@ -1,8 +1,8 @@
-const router = require('express').Router()
+const router = require('express').Router();
 
 const getChampInfo = require('../controllers/lol_handler');
 
 router.route('/league')
-  .get(getChampInfo);
+  .post(getChampInfo);
 
 module.exports = router;
