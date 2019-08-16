@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 
   <body>
+    <div>
+      {{#if inGame}}
+      <h1>My Champion's Current Game</h1>
+
+      {{/if}}
+    </div>
     <div class="index-container">
       <fieldset>
         <form action="/api/league/" method="post">
           <input name="summoner" type="text" class="ghost-input" placeholder="Summoner name" required>
           <input type="submit" class="ghost-button" value="Get Summoner Stats">
         </form>
-        
+
+        <form action="/api/league/featured" method="get">
+          <input type="submit" class="ghost-button" value="Get Featured Games">
+        </form>
+
       {{#if summoner}}
       <p>Your Summoner name is {{summoner}}</p>
       <p>Your current Rank is {{level}}</p>
+      {{/if}}
+      {{#if error}} 
+      <p>{{error}}</p>
       {{/if}}
     </div>
   </body>

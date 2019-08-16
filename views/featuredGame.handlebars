@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+  <body>
+    <div class="index-container">
+      <h1>Featured Game</h1>
+      <h3>Players</h3>
+      {{#each player}}
+        <li>{{this}}</li>
+      {{/each}}
+         <button><a href="/api/league/featured">Refresh</a></button>
+         <button><a href="/api/league">Go Back</a></button>
+
+      {{!-- <button action="api/league/featured">Refresh</button> --}}
+      
+    </div>
+  </body>
+</html>
